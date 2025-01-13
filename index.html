@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" type="text/css" href="../styles.css" />
+  <title>Your Local Time</title>
+  <style>
+    /* Base styles */
+    body {
+      background: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* Centered layout */
+    .center {
+      text-align: center;
+      padding: 10px;
+    }
+
+    /* Banner styles */
+    #banner {
+      font-size: 36px;
+      font-weight: bold;
+      text-transform: capitalize;
+      color: #ffffff;
+      margin-bottom: 20px;
+      animation: fadeIn 2s ease-in-out, glow 2s infinite alternate;
+      text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+      position: relative;
+    }
+
+    /* Clock styles */
+    #clock {
+      font-size: 48px;
+      font-weight: bold;
+      color: #333;
+      background: linear-gradient(135deg, #ffcc00, #ff9900);
+      padding: 20px 50px;
+      border-radius: 12px;
+      box-shadow: 0 15px 25px rgba(255, 153, 0, 0.5);
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Responsive styles for smaller screens */
+    @media (max-width: 768px) {
+      #banner {
+        font-size: 28px; /* Reduce banner font size for mobile */
+      }
+
+      #clock {
+        font-size: 36px; /* Reduce clock font size for mobile */
+        padding: 15px 30px; /* Adjust padding */
+      }
+    }
+
+    @media (max-width: 480px) {
+      #banner {
+        font-size: 24px; /* Further reduce banner font size for small screens */
+      }
+
+      #clock {
+        font-size: 32px; /* Further reduce clock font size */
+        padding: 20px 50px; /* Adjust padding for better fit */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="center">
+    <div id="banner"><span>Your Local Time</span></div>
+    <div id="clock"></div>
+  </div>
+  <script src="clock.js"></script>
+</body>
+</html>
