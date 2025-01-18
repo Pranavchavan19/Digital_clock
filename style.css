@@ -138,6 +138,8 @@
     }
   }
   
+
+  
   @media (max-width: 340px) {
     .container {
       gap: 20px;
@@ -189,7 +191,7 @@
   
     .search-box {
       width: 320px;
-      margin-bottom: 10px;
+      margin-bottom: 0px;
     }
   
     .search-box input {
