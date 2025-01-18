@@ -138,26 +138,24 @@
     }
   }
   
-  @media (max-width: 480px) {
+  @media (max-width: 340px) {
     .container {
       gap: 20px;
     }
   
     .card {
-      
-height: 70px;
-width: 280px;
-      
+      height: 70px;
+      width: 280px;
     }
+  
     .input-card {
       background: rgb(16, 143, 16);
-      
       position: relative;
     }
+  
     .search-box {
       width: 270px;
       margin-bottom: 0px;
-      
     }
   
     .search-box input {
@@ -167,10 +165,44 @@ width: 280px;
   
     #clock {
       font-size: 30px;
-      
     }
-    .clock-card{
+  
+    .clock-card {
       width: 280px;
+    }
+  }
+  
+  @media (min-width: 341px) and (max-width: 450px) {
+    .container {
+      gap: 25px;
+    }
+  
+    .card {
+      height: 90px;
+      width: 340px;
+    }
+  
+    .input-card {
+      background: rgb(16, 143, 16);
+      position: relative;
+    }
+  
+    .search-box {
+      width: 320px;
+      margin-bottom: 10px;
+    }
+  
+    .search-box input {
+      padding: 14px 25px;
+      font-size: 16px;
+    }
+  
+    #clock {
+      font-size: 36px;
+    }
+  
+    .clock-card {
+      width: 340px;
     }
   }
   
