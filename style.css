@@ -178,6 +178,7 @@
   
     .clock-card {
       width: 280px;
+      height: 80px;
     }
   }
   
@@ -218,6 +219,7 @@
   
     .clock-card {
       width: 340px;
+      height: 100px;
     }
   }
   
