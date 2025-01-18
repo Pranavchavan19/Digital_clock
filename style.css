@@ -1,0 +1,176 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #203b44;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 20px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+   .card {
+    width: 100%;
+    max-width: 500px;
+    background-color: #203b44;
+    border-radius: 15px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    
+  }
+  
+
+
+  .input-card {
+    background: green;
+    border: 0px solid #ddd;
+    position: relative;
+  }
+  
+  
+  .search-box {
+    width: 500px;
+    margin-bottom: 0px;
+  }
+  
+  .search-box input {
+    width: 96%;
+    
+    padding: 15px 28px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    outline: none;
+    background-color: #f1f1f1;
+    color: #333;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .search-box input:focus {
+    border-color: #2a5298;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(42, 82, 152, 0.3);
+  }
+  
+  
+  .country-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 999;
+  }
+  
+  .country-list div {
+    padding: 15px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+
+  
+  .clock-card {
+    background: #ff9c00;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(255, 156, 0, 0.6); 
+    border: 2px solid transparent; 
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .clock-card {
+    border: 2px solid #ff9c00;
+    box-shadow: 0 0 20px #ff9c00; 
+  }
+  
+  
+  
+
+  
+  #clock {
+    font-size: 60px;
+    font-weight: 600;
+    color: rgb(30, 11, 11);
+   
+  }
+  
+
+  
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 15px;
+    }
+  
+    .search-box input {
+      padding: 12px 20px;
+      font-size: 16px;
+    }
+  
+    #clock {
+      font-size: 48px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      gap: 20px;
+    }
+  
+    .card {
+      
+height: 70px;
+width: 280px;
+      
+    }
+    .input-card {
+      background: rgb(16, 143, 16);
+      
+      position: relative;
+    }
+    .search-box {
+      width: 270px;
+      margin-bottom: 0px;
+      
+    }
+  
+    .search-box input {
+      padding: 12px 20px;
+      font-size: 14px;
+    }
+  
+    #clock {
+      font-size: 30px;
+      
+    }
+    .clock-card{
+      width: 280px;
+    }
+  }
+  
