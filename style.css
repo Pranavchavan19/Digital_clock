@@ -146,7 +146,7 @@
     }
   
     .card {
-      height: 70px;
+      height: 60px;
       width: 280px;
     }
   
@@ -157,16 +157,23 @@
   
     .search-box {
       width: 270px;
-      margin-bottom: 0px;
+      
+
     }
   
     .search-box input {
-      padding: 12px 20px;
+      padding: 9px 20px;
       font-size: 14px;
+      
     }
   
     #clock {
-      font-size: 30px;
+      font-size: 45px;
+      text-align: center; /* Horizontally center the text */
+      display: flex; /* Use flexbox for vertical centering */
+      justify-content: center; /* Center horizontally in a flex container */
+      align-items: center; /* Center vertically in a flex container */
+      height: 100%; /* Ensure it takes up available height for vertical centering */
     }
   
     .clock-card {
@@ -180,7 +187,7 @@
     }
   
     .card {
-      height: 90px;
+      height: 60px;
       width: 340px;
     }
   
@@ -190,18 +197,24 @@
     }
   
     .search-box {
-      width: 320px;
-      margin-bottom: 0px;
+      width: 332px;
+      margin-top: -3px;
     }
   
     .search-box input {
-      padding: 14px 25px;
-      font-size: 20px;
+      padding: 10px 25px;
+      font-size: 18px;
     }
   
     #clock {
-      font-size: 44px;
+      font-size: 50px;
+      text-align: center; /* Horizontally center the text */
+      display: flex; /* Use flexbox for vertical centering */
+      justify-content: center; /* Center horizontally in a flex container */
+      align-items: center; /* Center vertically in a flex container */
+      height: 100%; /* Ensure it takes up available height for vertical centering */
     }
+    
   
     .clock-card {
       width: 340px;
